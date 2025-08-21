@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontawesome icons using CDN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            <div class="logo-image"><img src="logo.png" height="150px" width="150px" alt=""></div>
+            <div class="logo-text">Coffee Time</div>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Fontawesome icons using CDN -->
+         <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+         <div class="login" onclick='document.getElementById("login-container").style.display="block"'><i class="fa-solid fa-user"></i></div>
+         <div class="h-menu"><i class="fa-solid fa-bars"></i></div>
+    </div>
+    
+    <!-- Header Image -->
+     <div class="header-img">
+        <img src="header-image.jpg" alt="" width="100%" height="400px">
+     </div>
+     <button onclick="">Click Here</button>
+
+     <!-- Login Modal -->
+       <div id="login-container">
+        <i id="close" class="fa fa-window-close" aria-hidden="true" onclick='document.getElementById("login-container").style.display="none"'></i>
+        <h2>Login</h2>
+    <input type="text" name="username" id="usrnam">
+    <input type="password" name="password" id="pwd">
+    <button id="login-btn">Login</button>
+    <a id="fpwd" href="#">Forget Password?</a>
+    </div>
+
+</body>
+</html>
